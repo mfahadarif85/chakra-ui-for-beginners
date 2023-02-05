@@ -1,4 +1,5 @@
 import { Box, Text, Center, Button } from "@chakra-ui/react";
+import Features from "./components/Features";
 import Header from "./components/Header";
 import Pricing from "./components/Pricing";
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className='App'>
       <Header />
       <Pricing />
+      <Features />
     </div>
   );
 }
