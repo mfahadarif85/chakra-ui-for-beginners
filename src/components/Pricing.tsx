@@ -15,8 +15,8 @@ import { CheckIcon } from "../icons/Icon";
 export const ListItem = (props: StackProps) => {
   const { children, ...rest } = props;
   return (
-    <HStack as='li' spacing='20px' {...rest}>
-      <Icon as={CheckIcon} w='22px' h='22px'></Icon>
+    <HStack as='li' spacing='5' {...rest}>
+      <Icon as={CheckIcon} w='5' h='5'></Icon>
       <Text>{children}</Text>
     </HStack>
   );
@@ -25,32 +25,32 @@ export const ListItem = (props: StackProps) => {
 const Pricing = () => {
   return (
     <Box
-      maxWidth='990px'
+      maxWidth='5xl'
       margin='auto'
-      mt='-256px'
-      borderRadius='12px'
+      mt='-64'
+      borderRadius='3'
       overflow='hidden'
       boxShadow='xl'
     >
       <Flex>
-        <Box bg='#f0eafb' p='60px' textAlign='center'>
-          <Text fontSize='24px' fontWeight='800'>
+        <Box bg='#f0eafb' p='15' textAlign='center'>
+          <Text fontSize='2xl' fontWeight='800'>
             Premium PRO
           </Text>
-          <Heading fontSize='60px' pt='16px'>
+          <Heading fontSize='6xl' pt='4'>
             $329
           </Heading>
-          <Text pt='8px'>billed just once</Text>
-          <Button colorScheme='purple' size='lg' w='282px' mt='24px'>
+          <Text pt='2'>billed just once</Text>
+          <Button colorScheme='purple' size='lg' w='282px' mt='70'>
             Get Started
           </Button>
         </Box>
-        <Box p='60px' fontSize='18px' bg='white'>
+        <Box p='10' fontSize='lg' bg='white'>
           <Text>
             Access these features when you get this pricing package for your
             business.
           </Text>
-          <Stack as='ul' spacing='20px' pt='24px'>
+          <Stack as='ul' spacing='5' pt='6'>
             <ListItem>International calling and messaging API</ListItem>
             <ListItem>Additional phone numbers</ListItem>
             <ListItem>Automated messages via Zapier</ListItem>
